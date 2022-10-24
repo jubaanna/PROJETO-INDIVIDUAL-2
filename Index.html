@@ -1,0 +1,103 @@
+>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma Encoder</title>
+
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+
+    <!--link da font do título do game-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+    <!--link da font dos textos do game-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div id="caixa-titulo">
+            <h1 id="titulo">Jubaanna</h1>
+        </div>
+
+
+    </header>
+
+    <div id="texto-aprensetacao">
+        <p id="texto">Meu projeto individual é um codificador/decodificador que utiliza
+            as criptográfias da <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar">Cifra de César</a> e <a
+                href="https://pt.wikipedia.org/wiki/Base64">Base64</a> para criptografar/descriptografar mensagens
+            desejadas pelo usuário.
+        </p>
+        <p id="texto">Adicione o texto desejado no primeiro bloco e escolha entre codificar/decodifcar a mensagem com
+            Base64 ou Cifra de César.</p>
+    </div>
+
+    <main>
+        <div id="box">
+
+            <div class="caixa-texto">
+                <h2 id="subtitulo">Digite aqui</h2>
+
+                <textarea id="texto-entrada" required></textarea>
+
+            </div>
+
+            <select id="selecao">
+
+                <option value="cesar" id="cesar" selected>Cesar</option>
+                <option value="base" id="base64">Base64</option>
+
+            </select>
+
+            <div id="caixa-chave">
+
+                <label id="legenda" for="chave">Chave:</label>
+                <input name="escolha" type="text" value="" id="chave">
+
+            </div>
+
+            <div id="caixa-escolha">
+
+                <input name="escolha" type="radio" value="Codificar" id="codified"><label id="legenda">Codificar</label>
+                <input name="escolha" type="radio" value="Decodificar" id="decodified"><label
+                    id="legenda">Decodificar</label>
+
+            </div>
+
+            <div class="confirma-btn">
+
+                <button id="codificar-btn" class="botao">Codificar Mensagem!</button>
+                <button id="decodificar-btn" class="botao">Decodificar Mensagem!</button>
+
+            </div>
+
+            <div id="caixa-saida">
+
+                <textarea id="texto-saida" readonly></textarea>
+
+            </div>
+
+            <div id="caixa-btn">
+
+                <button id="btn-apagar" class="botao">Apagar</button>
+
+
+            </div>
+        </div>
+    </main>
+
+    <script src="./JS/main.js"></script>
+
+</body>
+
+</html>
